@@ -53,6 +53,6 @@ def preprocess_data(input_path, output_path):
 if __name__ == "__main__":
 
     preprocess_data(
-    "Eksperimen_SML_Telco_Churn/Telco-Customer-Churn.csv",
-    "Eksperimen_SML_Telco_Churn/preprocessing/telco_preprocessing.csv"
+        "../Telco-Customer-Churn_raw.csv",
+        "telco_preprocessing.csv"
     )
