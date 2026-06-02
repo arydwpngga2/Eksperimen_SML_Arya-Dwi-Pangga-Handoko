@@ -5,6 +5,8 @@ on:
     branches:
       - main
 
+  workflow_dispatch:
+
 jobs:
   preprocess:
     runs-on: ubuntu-latest
@@ -16,10 +18,10 @@ jobs:
         with:
           python-version: "3.13"
 
-      - run:
+      - run: |
           pip install pandas
           pip install scikit-learn
 
-      - run:
+      - run: |
           cd preprocessing
           python automate_Arya-Dwi-Pangga-Handoko.py
